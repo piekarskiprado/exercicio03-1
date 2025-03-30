@@ -1,16 +1,25 @@
 {
-  "name": "exercicio03",
+  "name": "3ano_exercicio03",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
     "grunt": "grunt",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PIEKARSKIPRADO/3ano_exercicio03.git"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PIEKARSKIPRADO/3ano_exercicio03/issues"
+  },
+  "homepage": "https://github.com/PIEKARSKIPRADO/3ano_exercicio03#readme",
   "description": "",
   "devDependencies": {
-    "grunt": "^1.6.1"
+    "grunt": "^1.6.1",
+    "sass": "^1.86.0"
   }
 }

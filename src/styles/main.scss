@@ -1,0 +1,243 @@
+$primary: black;
+$secundary: #69B99D;
+$terciary: #CCF4E6;
+$quarta: #F9F9F9;
+$quinta: #FFFFFF;
+$sexta: #777;
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $quarta;
+    padding: 15px 60px;
+    
+
+.logo {
+    font-size: 26px;
+    font-weight: bold;
+    color: #000;
+
+span {
+    color: $secundary; 
+}
+    }
+
+.menu {
+    display: flex;
+    list-style: none;
+    gap: 35px; 
+    padding: 0;
+    margin: 0;
+
+li {
+    a {
+    text-decoration: none;
+    color: $sexta;
+    font-weight: 600;
+            }
+        }
+    }
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 90px 130px;
+    background-color: $quarta;
+
+.hero-text {
+    max-width: 520px;
+
+h1 {
+    font-size: 42px;
+    font-weight: bold;
+    color: $primary;
+    margin-bottom: 18px;
+    }
+
+p {
+    font-size: 19px;
+    color: $sexta;
+    margin-bottom: 22px;
+}
+
+.btn {
+    background-color: $secundary;
+    color: $quarta;
+    padding: 14px 26px;
+    border-radius: 10px;
+    font-size: 17px;
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-block;
+    border: none;
+    cursor: pointer;
+
+    &:hover {
+        background-color: darken($terciary, 12%);
+        }
+    }
+}
+.hero-image {
+    position: relative;
+
+img {
+    width: 500px;
+    border-radius: 12px;
+    position: relative;
+    z-index: 2;
+}
+
+&::before {
+    content: "";
+    position: absolute;
+    top: -22px;
+    right: -22px;
+    width: 100%;
+    height: 100%;
+    background-color: $secundary;
+    border-radius: 12px;
+        }
+    }
+}
+
+.sobre {
+    background-color: $quarta;
+    padding: 90px 0;
+
+    .container {
+        max-width: 1250px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        gap: 45px;
+
+    }
+
+    .imagem {
+        flex: 1;
+
+        img {
+            max-width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+        }
+    }
+
+    .texto {
+        flex: 1;
+
+        h2 {
+            font-size: 2.6rem;
+            font-weight: bold;
+            color: $primary;
+            margin-bottom: 22px;
+        }
+
+        p {
+            font-size: 1.3rem;
+            color: $sexta;
+            line-height: 1.7;
+            margin-bottom: 18px;
+        }
+    }
+}
+
+.servicos {
+    text-align: center;
+    padding: 90px 0;
+    background-color:$quarta;
+
+    .container {
+        max-width: 1150px;
+        margin: 0 auto;
+    }
+
+    h2 {
+        font-size: 2.6rem;
+        font-weight: bold;
+        color:$primary;
+        margin-bottom: 12px;
+    }
+
+    p {
+        font-size: 1.3rem;
+        color:$sexta;
+        max-width: 750px;
+        margin: 0 auto 45px;
+    }
+
+    .destaque {
+        color:$secundary;
+        font-weight: bold;
+    }
+
+    .cards {
+        display: flex;
+        justify-content: center;
+        gap: 22px;
+
+        .card {
+            background:$quarta;
+            padding: 32px;
+            border-radius: 12px;
+            box-shadow: 0 5px 10px $secundary;
+            text-align: center;
+            width: 320px;
+
+            &:hover {
+                transform: translateY(-6px);
+            }
+
+            img {
+                width: 125px;
+                margin-bottom: 18px;
+            }
+
+            h3 {
+                font-size: 1.6rem;
+                font-weight: bold;
+                color: $primary;
+                margin-bottom: 12px;
+            }
+
+            p {
+                font-size: 1.1rem;
+                color:$sexta;
+                line-height: 1.6;
+            }
+        }
+    }
+}
+
+.footer {
+    background-color: $secundary;
+    color: $quarta;
+    padding: 22px;
+    text-align: center;
+    width: 100%;
+    margin-top: 25px;
+
+.logo {
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.social-icons {
+    margin-top: 12px;
+
+a {
+    color: $quarta;
+    margin: 0 12px;
+    font-size: 22px;
+    text-decoration: none;
+
+&:hover {
+    opacity: 0.85;
+    }
+        }
+    }
+}
